@@ -52,11 +52,12 @@ li {
 h2 {
     font-size: 24px;
     color: rgb(37, 37, 37);
+    font-family: PlayfairDisplay;
 }
 
 p {
     line-height: 24px;
-    color: rgb(53, 52, 52);
+    color: rgb(77, 76, 76);
 }
 
 .title-support {
@@ -108,4 +109,10 @@ button {
 
 .splide__track {
     width: 400px !important;
+}
+
+@media screen and (max-width:428px) {
+    p {
+        font-size: 12px;
+    }
 }
