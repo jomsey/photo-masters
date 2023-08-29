@@ -1,0 +1,117 @@
+.container {
+    padding: 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    gap: 24px;
+    backdrop-filter: blur(5px);
+    z-index: 1;
+    background-color: rgb(20, 19, 19);
+}
+
+.logo {
+    width: 60px;
+}
+
+.brand {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.brand h4 {
+    color: var(--primary) !important;
+}
+
+
+.container .siteLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.container  a,
+.container p {
+    font-size: 12px;
+    color: var(--secondary);
+    display: block;
+}
+
+.container h4 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: rgb(218, 213, 207);
+}
+
+.inputGroup svg {
+    position: absolute;
+    left: 8px;
+    color: var(--primary) !important;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.inputGroup {
+    position: relative;
+    height: 100%;
+    width: 80%;
+}
+
+.inputGroup input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    padding-left: 32px;
+    color: var(--primary);
+}
+
+.container form {
+    border: 1px solid var(--primary);
+    display: flex;
+    height: 30px;
+    align-items: center;
+    margin-top: 16px;
+    overflow: hidden;
+}
+
+.container form button {
+    width: 30%;
+    height: 100%;
+    border: none;
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.inputGroup input:focus {
+    outline: none;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.copyright span {
+    /* color: var(--secondary); */
+    font-size: 14px;
+}
+
+.contacts{
+    color: #fff;
+    font-weight: 200;
+}
+
+@media screen and (max-width:428px) {
+    .container {
+        padding: 48px;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 24px;
+        backdrop-filter: blur(5px);
+        z-index: 1;
+        background-color: rgb(20, 19, 19);
+    }
+}

@@ -1,0 +1,22 @@
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 3px 0px 8px rgb(225, 221, 221);
+    display: block;
+    margin: 0 auto 24px auto;
+    background-color: var(--light);
+    overflow: hidden;
+}
+
+.member small {
+    display: block;
+    margin-top: 16px !important;
+    font-size: 12px;
+}
+
+.member small,
+.member h3 {
+    text-align: center;
+    margin: auto;
+}

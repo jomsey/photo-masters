@@ -1,0 +1,9 @@
+.pack {
+    z-index: 29;
+    display: flex;
+    gap: 12px;
+}
+
+.pack svg {
+    font-size: 30px;
+}

@@ -1,0 +1,109 @@
+.container{
+    width: 80%;
+    padding-top: 120px;
+    margin: auto;
+    margin-bottom: 48px;
+    background-color: rgb(232, 231, 230);
+    background-color: var(--light);
+    
+}
+.row{
+    border: 1px solid gainsboro;
+    padding: 24px;
+    background-color: #f4f7f8;
+}
+.slot{
+    margin: 24px 0;
+    border: 1px solid gainsboro;
+    padding: 24px;
+    position: relative;
+
+}
+
+.infoContainer{
+    padding: 12px 0;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 24px;
+}
+.inputGroup{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.inputGroup input{
+    border: 1px solid gainsboro;
+    padding: 8px;
+    color: rgb(59, 59, 59);
+    font-size: 14px;
+}
+.inputGroup input:focus{
+    outline: none;
+}
+
+.container button[type="submit"]{
+    background-color: var(--secondary);
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+}
+.container h1{
+    font-size: 1.5em;
+    margin-bottom: 24px;
+    color: var(--primary);
+}
+.help{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.help h5{
+    margin-bottom: 12px;
+}
+.help button{
+    background-color: rgb(145, 143, 143) !important;
+    height: 40px;
+}
+.help p{
+    color: #404040;
+}
+
+
+@media screen and (max-width:428px) {
+    .container{
+        width: 95%;
+        padding-top: 150px;
+    }
+    .row{
+        padding: 12px;
+    }
+    .slot{
+        margin: 12px 0;
+        padding: 12px;
+    
+    }
+    
+    .infoContainer{
+        grid-template-columns:1fr;
+        gap: 12px;
+    }
+    
+    
+    .help{
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+    }
+    .help h5{
+        margin-bottom: 12px;
+    }
+    .help button{
+        margin-top: 24px;
+        margin-bottom: 12px;
+    }
+    .help p{
+        color: #404040;
+    }
+    
+}

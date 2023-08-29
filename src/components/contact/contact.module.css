@@ -1,0 +1,149 @@
+.contactContainer {
+    height: 100%;
+    display: flex;
+    gap: 64px;
+    padding: 64px 0 72px 10%;
+    position: relative;
+    background-color: rgb(39, 39, 39);
+}
+
+.contactContainer::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--secondary);
+    width: 200px;
+    height: 100%;
+}
+
+.first {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.first h2 {
+    color: #fff;
+}
+
+.first p {
+    color: #d2d0d0;
+}
+
+.first p,
+.first button {
+    width: 70%;
+}
+
+.first form,
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.second {
+    background-color: rgb(19, 18, 18);
+    width: 40%;
+    padding: 24px;
+    color: #fff;
+    z-index: 2;
+}
+
+.second svg {
+    font-size: 30px;
+    color: var(--secondary);
+}
+
+.second h3 {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.infoCluster {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.inputGroup {
+    width: 70%;
+    position: relative;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+    width: 100%;
+    background-color: transparent;
+}
+
+.first form button {
+    padding: 10px 0;
+    background-color: var(--secondary);
+    color: var(--light);
+    border: none;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+    outline: none;
+    border: 1px solid var(--secondary);
+    color: rgb(137, 139, 139);
+    padding: 10px;
+}
+
+.inputGroup label {
+    color: rgb(137, 139, 139)
+}
+
+.contactContainer .pack {
+    position: absolute;
+}
+
+@media screen and (max-width:428px) {
+    .contactContainer {
+        height: 100%;
+        display: flex;
+        gap: 64px;
+        padding:64px 10% ;
+        flex-direction: column;
+    }
+    
+    .contactContainer::after {
+
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 200px;
+        z-index: -1;
+    }
+    
+    .first,.first p,
+    .first button,.second ,.inputGroup{
+        width: 100%;
+    }
+    
+    .first form,
+    .container {
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    
+    .infoCluster {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+    }
+    
+    .first form button {
+        padding: 10px 0;
+        background-color: var(--secondary);
+        color: var(--light);
+        border: none;
+    }
+    
+    
+}

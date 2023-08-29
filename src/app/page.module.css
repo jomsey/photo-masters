@@ -1,0 +1,412 @@
+.landing {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(/images/b3.jpg);
+    background-position: right;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 700px;
+    min-height: 600px;
+}
+
+.landing .video {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    width: 45%;
+    transform: translateY(-50%);
+    border-radius: 16px;
+    height: 350px !important;
+    overflow: hidden;
+}
+
+.landing h1,
+.landing h1 span {
+    font-size: 58px;
+    font-weight: 900;
+    color: var(--primary);
+}
+
+.landing h1 span {
+    color: var(--secondary)
+}
+
+.landing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(25, 24, 24), transparent);
+}
+
+.heroText {
+    margin-left: 10%;
+    z-index: 4;
+}
+
+.heroText p {
+    width: 400px;
+    color: var(--light);
+    margin-top: 24px;
+}
+
+.landing .coreValues {
+    width: 80%;
+    background-color: var(--light);
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid gainsboro;
+    display: none;
+}
+
+.landing .coreValues .singleValue {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing .coreValues .valuesContainer {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    height: 100px;
+}
+
+.preamble {
+    display: flex;
+    width: 100%;
+    gap: 24px;
+    background-color: beige;
+    padding: 64px 10%;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+}
+
+.preamble div:first-child {
+    width: 450px;
+}
+
+.preamble div:nth-child(2) {
+    height: 500px;
+    width: 500px;
+}
+
+.preamble p {
+    margin-top: 24px;
+}
+
+.preamble * {
+    z-index: 2;
+}
+
+.preamble::after {
+    content: "";
+    height: 100%;
+    width: 100px;
+    position: absolute;
+    background-color: var(--secondary);
+    left: 0;
+    z-index: 1;
+}
+
+.services {
+    width: 80%;
+    margin: 64px auto;
+}
+
+.services h2,
+.teamMembers h2 {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.servicesContainer,
+.teamMembersContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.teamMembersContainer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+    margin-bottom: 64px;
+}
+
+.teamMembers {
+    width: 80%;
+    margin: auto;
+}
+
+.teamMembers>p,
+.services>p {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+.teamMembersContainer::after {
+    content: "";
+    width: 100%;
+    background-color: rgb(244, 244, 244);
+    height: 90%;
+    position: absolute;
+    z-index: -2;
+    bottom: -16px;
+    border-radius: 8px;
+}
+
+.services>span,
+.teamMembers>span {
+    text-align: center;
+}
+
+.landingButtons {
+    position: absolute;
+    bottom: 64px;
+    left: 10%;
+}
+
+.landingButtons button {
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+}
+
+.landing button:nth-child(2) {
+    background-color: transparent;
+    border: 1px solid var(--light);
+    color: gainsboro;
+}
+
+.landing button:first-child {
+    background-color: var(--primary);
+    color: var(--light);
+    margin-right: 24px;
+}
+
+.vision,
+.butter {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    gap: 24px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.vision .col1 {
+    width: 40%;
+    position: relative;
+    bottom: -40px;
+ z-index: 10;
+}
+
+.vision .col2 {
+    width: 50%;
+}
+
+.col2 p,
+.butter p {
+    margin-top: 24px;
+}
+
+.vision .col1::after {
+    content: "";
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    top: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: linear-gradient(to right, var(--secondary), transparent);
+    z-index: -3;
+    border-radius: 10px;
+}
+
+.butter .col2 {
+    position: relative;
+    width: 50%;
+}
+
+.butter .col1 {
+    width: 50%
+}
+
+.butter .col2 img:nth-child(2) {
+    position: absolute;
+    height: 300px;
+    bottom: -34px;
+    left: -30px;
+    z-index: 30 !important;
+}
+
+.butter button {
+    cursor: pointer;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background-color: transparent;
+    padding: 10px 0;
+    width: 300px;
+    margin-top: 36px;
+}
+
+
+@media screen and (max-width:428px) {
+    .landing {
+        max-height: unset;
+        flex-direction: column;
+        justify-content: center;
+        background-position: center;
+    }
+    
+    .landing .video {
+        display: none;
+    }
+    
+    .landing h1,
+    .landing h1 span {
+        font-size: 48px;
+    }
+    
+    .heroText{
+        width: 90%;
+        margin: auto;
+    }
+   
+    
+    .heroText p {
+        width: 100%;
+    }
+    
+    
+    .preamble {
+        padding: 0;
+        flex-direction: column;
+    }
+    
+    .preamble div:first-child {
+        width: 450px;
+        width: 80%;
+        padding-top: 32px;
+    }
+    
+    .preamble div:nth-child(2) {
+        height: 500px;
+        width: 100%;
+    }
+    
+    .preamble p {
+        margin-top: 24px;
+    }
+    
+    .preamble * {
+        z-index: 2;
+    }
+    
+    .preamble::after {
+        width: 20px;
+    }
+
+    .services {
+        width: 80%;
+        margin: 64px auto;
+    }
+    
+    .services h2,
+    .teamMembers h2 {
+        text-align: center;
+        margin-bottom: 36px;
+    }
+    
+    .servicesContainer,
+    .teamMembersContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .teamMembersContainer {
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        margin-bottom: 64px;
+    }
+    
+    .teamMembers {
+        width: 100%;
+        margin: auto;
+    }
+    
+   
+    .services>p {
+        width: 100%;
+    }
+
+    .teamMembersContainer::after {
+        height: 100%;
+        bottom: unset;
+        padding: 24px; 
+    }
+    
+    .services>span,
+    .teamMembers>span {
+        text-align: center;
+    }
+    
+    .landingButtons {
+        bottom: 100px;
+    }
+    
+    .vision,
+    .butter {
+        width: 100%;
+        margin: auto;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .vision .col1,.vision .col2 , .butter .col1{
+        width: 80%;
+        margin: auto;
+    }
+    
+    .vision .col1::after {
+        width: 100%;
+        height: 80%;
+        bottom: 36px;
+        top: unset;
+        left:0;
+        z-index: -80;
+
+    }
+    .vision{
+        flex-direction: column-reverse;
+        margin-top: 64px;
+    }
+    .butter .col2 {
+        position: relative;
+        width: 100%;
+    }
+     .teamMembers>p{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 64px;
+     }
+     
+}
