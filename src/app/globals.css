@@ -34,7 +34,8 @@ img {
     height: 100%;
 }
 
-body ,html{
+body,
+html {
     background-color: #fff;
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -48,7 +49,6 @@ li {
     list-style-type: none;
 }
 
-
 h2 {
     font-size: 24px;
     color: rgb(37, 37, 37);
@@ -56,6 +56,7 @@ h2 {
 
 p {
     line-height: 24px;
+    color: rgb(53, 52, 52);
 }
 
 .title-support {
@@ -66,8 +67,8 @@ p {
     font-family: Courgette;
 }
 
-
-.title-support::after,.title-support::before {
+.title-support::after,
+.title-support::before {
     content: "";
     width: 30px;
     height: 2px;
@@ -75,12 +76,13 @@ p {
     display: inline-block;
     margin: 0 0px 2px 8px;
 }
-button{
+
+button {
     cursor: pointer;
 }
 
-.loading{
-    position:  fixed;
+.loading {
+    position: fixed;
     background-color: rgba(0, 0, 0, 0.807);
     display: flex;
     flex-direction: column;
@@ -92,17 +94,18 @@ button{
     top: 0;
     left: 0;
 }
-.loading svg{
+
+.loading svg {
     color: var(--secondary);
     font-size: 2.5rem;
 }
 
-.loading span{
+.loading span {
     margin-top: 24px;
     color: var(--secondary);
     font-weight: 600;
 }
-.splide__track{
-    width: 400px !important;
 
+.splide__track {
+    width: 400px !important;
 }
