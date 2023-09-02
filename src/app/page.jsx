@@ -106,7 +106,7 @@ export default function Home() {
 
       <section className={styles.vision}>
             <div className={styles.col1}>
-                <Image width="400" height="400" src="/images/b8.png"/>``
+                <Image width="400" height="400" src="/images/b8.png" loading="lazy"/>
             </div>
 
             <div className={styles.col2}>
