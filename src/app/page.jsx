@@ -15,8 +15,8 @@ export default function Home() {
   return (
     <>
       <section className={styles.landing} id="top">
-             <div className={styles.video}><Video/>
-             </div>
+             {/* <div className={styles.video}><Video/>
+             </div> */}
              <div className={styles.heroText}>
                   <h1>Your<br/><span>Photography</span><br/>Masters</h1>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure est perferendis asperiores in accusantium voluptas qui sint nemo nostrum eos.</p>
@@ -37,7 +37,7 @@ export default function Home() {
           </div>
 
           <div>
-              <Image src="/images/b2.jpg" width="400" height="300" loading="lazy"/>
+              <Image src="/images/b2x.jpg" width="400" height="300" loading="lazy"/>
           </div>
 
       </section>
@@ -98,8 +98,7 @@ export default function Home() {
               </div>
 
               <div className={styles.col2}>
-                   <Image src="/images/b5.jpg" width="500" height="500" loading="lazy"/>
-                   {/* <Image src="/images/b4.jpg" width="500" height="500" loading="lazy"/> */}
+                   <Image src="/images/b25.jpg" width="500" height="500" loading="lazy"/>
               </div>
 
       </section>
@@ -128,13 +127,20 @@ export default function Home() {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque numquam totam rem. Iste repellendus praesentium dolores alias! Tempora quasi eius nihil at voluptatum. Aut, officia asperiores! Animi ipsam omnis natus?s</p>
          
           <div className={styles.teamMembersContainer}> 
-                <Member name="John Doe"/>
+                <Member name="Neckyon"/>
+                <Member name="Sam Doe"/>
+                <Member name="Jane Doe"/>
+                <Member name="Anne Doe"/>
+          </div>
+          <div className={styles.teamMembersContainer}> 
+                <Member name="Bill Doe"/>
                 <Member name="Sam Doe"/>
                 <Member name="Jane Doe"/>
                 <Member name="Anne Doe"/>
           </div>
       </section>
         <Gallery images={images}/>
+
     </>
   )
 }

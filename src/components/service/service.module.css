@@ -13,9 +13,10 @@
 }
 
 .singleService p {
-    font-size: 14px;
     margin-top: 8px;
-    color: var(--light-dark);
+}
+.singleService h3{
+    color: rgb(50, 50, 50);
 }
 
 .logo svg {

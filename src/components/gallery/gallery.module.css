@@ -11,7 +11,12 @@
     background-color: var(--grey);
     position: relative;
 }
-
+.gallery img{
+    object-fit: cover !important;
+    object-position: top;
+    -o-object-position: top;
+    -o-object-fit: cover;
+}
 .overlay {
     position: absolute;
     top: 0;
@@ -24,6 +29,7 @@
     background-color: rgba(0, 0, 0, 0.449);
     visibility: hidden;
     transition: all .5s ease-in-out;
+
 }
 
 .galleryImage:hover .overlay {

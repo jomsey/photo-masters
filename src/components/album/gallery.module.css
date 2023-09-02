@@ -37,6 +37,12 @@
     margin: auto;
     margin-top: 64px;
 }
+.album img{
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: top;
+    -o-object-position: top;
+}
 
 .galleryImage {
     height: 200px;

@@ -13,6 +13,7 @@
 .row2 img {
     height: 360px;
     object-fit: cover;
+    object-position: top;
 }
 
 .row1 {

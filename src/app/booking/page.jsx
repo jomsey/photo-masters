@@ -8,11 +8,27 @@ import { faCheckCircle, faEdit, faPenRuler, faPhone, faSpinner } from "@fortawes
 export default function Booking(){
    const [formSubmittingDone ,setFormSubmittingDone] = React.useState(false)
    const [bookingDone ,setBookingDone] = React.useState(false)
+   const [formData,setFormData] = React.useState(null)
 
 
    const handleSubmit = e =>{
       e.preventDefault()
-      setBookingDone(true)
+      //setBookingDone(true)
+      try {
+         console.log(formData)
+      } catch (error) {
+         
+      }
+      finally{
+
+      }
+      
+   }
+
+   const handleFieldChange=e=>{
+      const value = e.target.value
+      const name = e.target.name
+      setFormData(data=>({...data,[name]:value}))
    }
    
  return (
@@ -37,13 +53,14 @@ export default function Booking(){
          ):
 
        (<div className={styles.row}>
-         <form onSubmit={handleSubmit}>
+         <form onSubmit={handleSubmit} method="POST">
+            
             <div className={styles.slot}>
-               <h4>Select Date</h4>
-                
-            </div>
-            <div className={styles.slot}>
-               <h4>Select Time</h4>
+               <h4>Schedule</h4>
+                <div className={styles.inputGroup}>
+                           <label htmlFor="name">Date & Time</label>
+                           <input type="datetime-local" name="dateTime" onChange={handleFieldChange} />
+                     </div>
                 
             </div>
             <div className={styles.slot}>
@@ -52,30 +69,37 @@ export default function Booking(){
                  <div>
                      <div className={styles.inputGroup}>
                            <label htmlFor="name">Name / Company</label>
-                           <input type="text" />
+                           <input type="text" name="company" onChange={handleFieldChange} />
                      </div>
                      <div className={styles.inputGroup}>
-                           <label htmlFor="name">Email</label>
-                           <input type="text" />
+                           <label htmlFor="email">Email</label>
+                           <input type="text" name="email" onChange={handleFieldChange} />
                      </div>
                      <div className={styles.inputGroup}>
-                           <label htmlFor="name">Phone</label>
-                           <input type="text" />
+                           <label htmlFor="phone">Phone</label>
+                           <input type="text" name="phone" onChange={handleFieldChange} />
                      </div>
                      <div className={styles.inputGroup}>
-                           <label htmlFor="name">Address</label>
-                           <input type="text" />
+                           <label htmlFor="address">Address</label>
+                           <input type="text" name="address" onChange={handleFieldChange} />
                      </div>
                  </div>
                   
                  <div>
                      <div className={styles.inputGroup}>
-                           <label htmlFor="name">Venue Address</label>
-                           <input type="text" />
+                           <label htmlFor="venueAddress">Venue Address</label>
+                           <input type="text" name="venueAddress" />
                      </div>
                      <div className={styles.inputGroup}>
-                           <label htmlFor="name">Session Type</label>
-                           <input type="text" />
+                           <label htmlFor="session">Session Type</label>
+                           <select name="session" onChange={handleFieldChange}>
+                              <option value="none">select session</option>
+                              <option value="Wedding">Wedding</option>
+                              <option value="Fashion">Fashion</option>
+                              <option value="Birthday">Birthday</option>
+                              <option value="Real Estate">Real Estate</option>
+                              <option value="other">Other</option>
+                           </select>
                      </div>
                      <div className={styles.inputGroup}>
                            <label htmlFor="name">Phone</label>

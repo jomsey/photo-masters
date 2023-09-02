@@ -18,6 +18,7 @@
     right: 10%;
     width: 45%;
     transform: translateY(-50%);
+    -o-transform: translateY(-50%);
     border-radius: 16px;
     height: 350px !important;
     overflow: hidden;
@@ -42,6 +43,11 @@
     width: 100%;
     height: 100%;
     background-image: linear-gradient(to right, rgb(25, 24, 24), transparent);
+    background-image: -moz-linear-gradient()(to right, rgb(25, 24, 24), transparent);
+    background-image: -o-linear-gradient()(to right, rgb(25, 24, 24), transparent);
+    background-image: -webkit-linear-gradient()(to right, rgb(25, 24, 24), transparent);
+
+
 }
 
 .heroText {
@@ -62,6 +68,7 @@
     bottom: -50px;
     left: 50%;
     transform: translateX(-50%);
+    -o-transform: translateX(-50%);
     padding: 16px;
     border-radius: 8px;
     border: 1px solid gainsboro;
@@ -103,6 +110,11 @@
 .preamble div:nth-child(2) {
     height: 500px;
     width: 500px;
+}
+
+.preamble img{
+    object-fit: cover;
+    -o-object-fit: cover;
 }
 
 .preamble p {
@@ -239,10 +251,14 @@
     z-index: -3;
     border-radius: 10px;
 }
-
+.butter{
+    z-index: 1;
+}
 .butter .col2 {
     position: relative;
     width: 50%;
+    filter: grayscale();
+
 }
 
 .butter .col1 {
@@ -261,10 +277,25 @@
     cursor: pointer;
     border: 2px solid var(--primary);
     color: var(--primary);
-    background-color: transparent;
+    background-color: #fff !important;
     padding: 10px 0;
     width: 300px;
     margin-top: 36px;
+    position: relative;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+.butter button::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 8px;
+    left: 8px;
+    background-color: var(--secondary);
+    z-index: -1;
 }
 
 
@@ -282,11 +313,11 @@
     
     .landing h1,
     .landing h1 span {
-        font-size: 48px;
+        font-size: 2.7rem;
     }
     
     .heroText{
-        width: 90%;
+        width: 80%;
         margin: auto;
     }
    
@@ -295,16 +326,15 @@
         width: 100%;
     }
     
-    
     .preamble {
         padding: 0;
         flex-direction: column;
+
     }
     
     .preamble div:first-child {
-        width: 450px;
         width: 80%;
-        padding-top: 32px;
+        padding: 48px 0;
     }
     
     .preamble div:nth-child(2) {
@@ -334,6 +364,7 @@
         text-align: center;
         margin-bottom: 36px;
     }
+
     
     .servicesContainer,
     .teamMembersContainer {
@@ -346,6 +377,9 @@
         grid-template-columns: 1fr 1fr;
         position: relative;
         margin-bottom: 64px;
+        height: 100%;
+        padding: 0 10%;
+        gap: 24px;
     }
     
     .teamMembers {
@@ -408,5 +442,11 @@
         margin: auto;
         margin-bottom: 64px;
      }
+
+     .butter button {
+        width: 100%;
+        margin-bottom: 36px;
+        
+    }
      
 }

@@ -13,10 +13,19 @@
     display: block;
     margin-top: 16px !important;
     font-size: 12px;
+    color: rgb(69, 69, 69) !important;
+    font-weight: 600;
 }
 
 .member small,
 .member h3 {
     text-align: center;
     margin: auto;
+    color: var(--secondary);
+}
+.avatar img{
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: top;
+    object-position: top;
 }

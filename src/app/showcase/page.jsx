@@ -17,7 +17,7 @@ export default function Showcase() {
        <section className={styles.dp1} >
            <div className={styles.row1}>
               <div>
-                    <Image width="400" height="400" src="/images/b3.jpg"/> 
+                    <Image width="400" height="400" src="/images/b27.jpg"/> 
                 </div>
 
                 <div className={`${styles.center}`}>
@@ -30,17 +30,17 @@ export default function Showcase() {
 
            <div className={`${styles.row2} ${styles.center}`}>
                 <div>
-                    <Image width="400" height="400" src="/images/b1.jpg"/> 
+                    <Image width="400" height="400" src="/images/b20.jpg"/> 
                       <span>Lorem ipsum dolor sit amet.</span>
                 </div>
                 
                 <div> 
-                    <Image width="400" height="400" src="/images/b4.jpg"/> 
+                    <Image width="400" height="400" src="/images/b26.jpg"/> 
                     <span>Lorem ipsum dolor sit amet.</span>
                   </div>
                 
                 <div>
-                      <Image width="400" height="400" src="/images/b6.jpg"/> 
+                      <Image width="400" height="400" src="/images/b29.jpg"/> 
                       <span>Lorem ipsum dolor sit amet.</span>
                 </div>
            </div>
@@ -50,7 +50,7 @@ export default function Showcase() {
        <section className={styles.dp1} >
            <div className={`${styles.row1} ${styles.rowRev}`}>
               <div>
-                    <Image width="400" height="400" src="/images/b5.jpg"/> 
+                    <Image width="400" height="400" src="/images/b21.jpg"/> 
                 </div>
 
                 <div className={`${styles.center}`}>
@@ -63,7 +63,7 @@ export default function Showcase() {
 
            <div className={`${styles.row2} ${styles.center}`}>
                 <div>
-                    <Image width="400" height="400" src="/images/b9.jpg"/> 
+                    <Image width="400" height="400" src="/images/b28.jpg"/> 
                       <span>Lorem ipsum dolor sit amet.</span>
                 </div>
                 
@@ -73,7 +73,7 @@ export default function Showcase() {
                   </div>
                 
                 <div>
-                      <Image width="400" height="400" src="/images/b11.jpg"/> 
+                      <Image width="400" height="400" src="/images/b18.jpg"/> 
                       <span>Lorem ipsum dolor sit amet.</span>
                 </div>
            </div>
