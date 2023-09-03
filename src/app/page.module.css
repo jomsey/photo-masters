@@ -331,14 +331,13 @@
         flex-direction: column;
 
     }
-    
     .preamble div:first-child {
         width: 80%;
         padding: 48px 0;
     }
     
     .preamble div:nth-child(2) {
-        height: 500px;
+        height: 400px;
         width: 100%;
     }
     

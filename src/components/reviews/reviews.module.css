@@ -118,7 +118,9 @@
         margin: auto;
     }
     
-
+    .reviews p{
+        color:var(--secondary);
+    }
     
     .reviews .first {
         width: 100%;
