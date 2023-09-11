@@ -21,7 +21,7 @@
     width: 60%;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 32px;
 }
 
 .first h2 {
@@ -87,6 +87,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .inputGroup input,
@@ -103,6 +104,12 @@
 
 .contactContainer .pack {
     position: absolute;
+}
+.formError{
+    color: rgb(223, 53, 53);
+    position: absolute;
+    left: 0;
+    bottom: -20px;
 }
 
 @media screen and (max-width:428px) {

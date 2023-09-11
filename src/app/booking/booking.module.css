@@ -1,110 +1,122 @@
-.container{
+.container {
     width: 80%;
     padding-top: 120px;
     margin: auto;
     margin-bottom: 48px;
     background-color: rgb(232, 231, 230);
     background-color: var(--light);
-    
 }
-.row{
+
+.row {
     border: 1px solid gainsboro;
     padding: 24px;
     background-color: #f4f7f8;
 }
-.slot{
+
+.slot {
     margin: 24px 0;
     border: 1px solid gainsboro;
     padding: 24px;
     position: relative;
-
 }
 
-.infoContainer{
+.infoContainer {
     padding: 12px 0;
     display: grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 24px;
 }
-.inputGroup{
+
+.inputGroup {
     display: flex;
     flex-direction: column;
     margin-top: 12px;
+    position: relative;
+    margin-bottom: 24px;
 }
 
-.inputGroup input,.inputGroup select{
+.inputGroup input,
+.inputGroup select {
     border: 1px solid gainsboro;
     padding: 8px;
     color: rgb(59, 59, 59);
     font-size: 14px;
 }
-.inputGroup input:focus,.inputGroup select:focus{
-    
+
+.inputGroup input:focus,
+.inputGroup select:focus {
     outline: none;
 }
 
-.container button[type="submit"]{
+.container button[type="submit"] {
     background-color: var(--secondary);
     border: none;
     color: #fff;
     padding: 8px 16px;
 }
-.container h1{
+
+.container h1 {
     font-size: 1.5em;
     margin-bottom: 24px;
     color: var(--primary);
 }
-.help{
+
+.help {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.help h5{
+
+.help h5 {
     margin-bottom: 12px;
 }
-.help button{
+
+.help button {
     background-color: rgb(145, 143, 143) !important;
     height: 40px;
 }
-.help p{
+
+.help p {
     color: #404040;
 }
 
+.formError {
+    color: rgb(223, 53, 53);
+    left: 0;
+    bottom: -20px;
+    position: absolute;
+    font-size: 11px;
+}
 
 @media screen and (max-width:428px) {
-    .container{
+    .container {
         width: 95%;
         padding-top: 150px;
     }
-    .row{
+    .row {
         padding: 12px;
     }
-    .slot{
+    .slot {
         margin: 12px 0;
         padding: 12px;
-    
     }
-    
-    .infoContainer{
-        grid-template-columns:1fr;
+    .infoContainer {
+        grid-template-columns: 1fr;
         gap: 12px;
     }
-    
-    
-    .help{
+    .help {
         flex-direction: column;
         justify-content: unset;
         align-items: unset;
     }
-    .help h5{
+    .help h5 {
         margin-bottom: 12px;
     }
-    .help button{
+    .help button {
         margin-top: 24px;
         margin-bottom: 12px;
     }
-    .help p{
+    .help p {
         color: #404040;
     }
-    
 }

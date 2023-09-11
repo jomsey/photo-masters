@@ -10,13 +10,13 @@ import BookingButton from "@/components/bookingButton/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faBookAtlas, faFilm, faPhotoFilm, faPlane, faPlaneUp,faRing} from "@fortawesome/free-solid-svg-icons";
 import SeeGalleryButton from "@/components/seeGalleryButton/button";
+import ReadMoreButton from './../components/readMoreBtn/button';
 
 export default function Home() {
   return (
     <>
       <section className={styles.landing} id="top">
-             {/* <div className={styles.video}><Video/>
-             </div> */}
+        
              <div className={styles.heroText}>
                   <h1>Your<br/><span>Photography</span><br/>Masters</h1>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure est perferendis asperiores in accusantium voluptas qui sint nemo nostrum eos.</p>
@@ -37,7 +37,13 @@ export default function Home() {
           </div>
 
           <div>
-              <Image src="/images/b2x.jpg" width="400" height="300" loading="lazy"/>
+              <Image 
+                    src="/images/b2x.jpg"
+                    width="400"
+                    height="300"
+                    loading="lazy"
+                    alt="camera man"
+              />
           </div>
 
       </section>
@@ -94,11 +100,16 @@ export default function Home() {
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea eius, dicta facilis dolor voluptatem dolorum molestias, sint nemo sed vel cumque! Dolorum, eius? Nemo blanditiis reprehenderit excepturi, sit laudantium ad!</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea eius, dicta facilis dolor voluptatem dolorum molestias, sint nemo sed vel cumque! Dolorum, eius? Nemo blanditiis reprehenderit excepturi, sit laudantium ad!</p>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea eius, dicta facilis dolor voluptatem dolorum molestias, sint nemo sed vel cumque! Dolorum, eius? Nemo blanditiis reprehenderit excepturi, sit laudantium ad!</p>
-                  <button type="button">Read More  <FontAwesomeIcon icon={faArrowRight}/></button>
+                  <ReadMoreButton/>
               </div>
 
               <div className={styles.col2}>
-                   <Image src="/images/b25.jpg" width="500" height="500" loading="lazy"/>
+                   <Image 
+                        src="/images/b25.jpg"
+                        width="500"
+                        height="500"
+                        loading="lazy"
+                        alt="seated holding a tablet"/>
               </div>
 
       </section>
@@ -128,16 +139,15 @@ export default function Home() {
          
           <div className={styles.teamMembersContainer}> 
                 <Member name="Neckyon"/>
-                <Member name="Sam Doe"/>
+                <Member name="Sam Doe" task="Drone Pilot"/>
                 <Member name="Jane Doe"/>
-                <Member name="Anne Doe"/>
-          </div>
-          <div className={styles.teamMembersContainer}> 
+                <Member name="Anne Doe"  task="Graphic Designer"/>
                 <Member name="Bill Doe"/>
                 <Member name="Sam Doe"/>
                 <Member name="Jane Doe"/>
                 <Member name="Anne Doe"/>
           </div>
+          
       </section>
         <Gallery images={images}/>
 

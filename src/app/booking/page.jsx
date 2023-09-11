@@ -8,8 +8,8 @@ import { faCheckCircle, faEdit, faPenRuler, faPhone, faSpinner } from "@fortawes
 export default function Booking(){
    const [formSubmittingDone ,setFormSubmittingDone] = React.useState(false)
    const [bookingDone ,setBookingDone] = React.useState(false)
-   const [formData,setFormData] = React.useState(null)
-
+   const [formData,setFormData] = React.useState(null);
+   const [errors,setErrors] = React.useState({})
 
    const handleSubmit = e =>{
       e.preventDefault()
@@ -28,7 +28,16 @@ export default function Booking(){
    const handleFieldChange=e=>{
       const value = e.target.value
       const name = e.target.name
+
+      const validEmail = /^[a-z0-9]+@[a-z]+\.[a-z]/
+         
+        //validate input fields 
+        value.trim() === ""?setErrors(e=>({...e,[name]:`${name} can't be empty`})):delete errors[name];
+        //check for valid email address
+        name === "email" && value.trim() !== "" && ! validEmail.test(value)?setErrors(e=>({...e,email:"Enter a valid email"})):delete errors["email"];
+
       setFormData(data=>({...data,[name]:value}))
+      console.log(errors);
    }
    
  return (
@@ -60,6 +69,7 @@ export default function Booking(){
                 <div className={styles.inputGroup}>
                            <label htmlFor="name">Date & Time</label>
                            <input type="datetime-local" name="dateTime" onChange={handleFieldChange} />
+                           <small className={styles.formError}>{errors.dateTime !==null  && errors.dateTime}</small>
                      </div>
                 
             </div>
@@ -69,19 +79,23 @@ export default function Booking(){
                  <div>
                      <div className={styles.inputGroup}>
                            <label htmlFor="name">Name / Company</label>
-                           <input type="text" name="company" onChange={handleFieldChange} />
+                           <input type="text" name="name" onChange={handleFieldChange} />
+                           <small className={styles.formError}>{errors.name !==null  && errors.name}</small>
                      </div>
                      <div className={styles.inputGroup}>
                            <label htmlFor="email">Email</label>
                            <input type="text" name="email" onChange={handleFieldChange} />
+                           <small className={styles.formError}>{errors.email !==null  && errors.email}</small>
                      </div>
                      <div className={styles.inputGroup}>
                            <label htmlFor="phone">Phone</label>
                            <input type="text" name="phone" onChange={handleFieldChange} />
+                           <small className={styles.formError}>{errors.phone !==null  && errors.phone}</small>
                      </div>
                      <div className={styles.inputGroup}>
                            <label htmlFor="address">Address</label>
                            <input type="text" name="address" onChange={handleFieldChange} />
+                           <small className={styles.formError}>{errors.address !==null  && errors.address}</small>
                      </div>
                  </div>
                   
@@ -89,6 +103,7 @@ export default function Booking(){
                      <div className={styles.inputGroup}>
                            <label htmlFor="venueAddress">Venue Address</label>
                            <input type="text" name="venueAddress" />
+                           <small className={styles.formError}>{errors.venueAddress !==null  && errors.venueAddress}</small>
                      </div>
                      <div className={styles.inputGroup}>
                            <label htmlFor="session">Session Type</label>
@@ -104,10 +119,12 @@ export default function Booking(){
                      <div className={styles.inputGroup}>
                            <label htmlFor="name">Phone</label>
                            <input type="text" />
+                           {/* <small className={styles.formError}>{errors.name !==null  && errors.name}</small> */}
                      </div>
                      <div className={styles.inputGroup}>
                            <label htmlFor="name">Address</label>
                            <input type="text" />
+                           {/* <small className={styles.formError}>{errors.name !==null  && errors.name}</small> */}
                      </div>
                  </div>
                </div>
@@ -118,8 +135,8 @@ export default function Booking(){
                         <h5>Need Our Help ?</h5>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, harum tempore quae asperiores fuga est.</p>
                     </div>
-                    <button type="submit"><FontAwesomeIcon icon={faPhone} /> +256-123-456-789</button>
-                 </div>
+                    <a href="tel:+256123456789"><button type="submit"><FontAwesomeIcon icon={faPhone} /> +256-123-456-789</button>
+</a>                 </div>
            <button type="submit">SUBMIT REQUEST <FontAwesomeIcon icon={faSpinner} spin/></button>
          </form>
        </div>)}

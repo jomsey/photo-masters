@@ -92,11 +92,11 @@
 @media screen and (max-width:428px) {
     .reviews {
         height: auto;
-        margin-bottom: 64px;
+        margin-bottom: 32px;
         overflow: hidden;
         flex-direction: column;
         background-color: rgb(250, 249, 249);
-        padding-bottom: 64px;
+        padding-bottom: 24px;
         z-index: 5;
     
 
@@ -118,7 +118,7 @@
         margin: auto;
     }
     
-    .reviews p{
+    .reviews .display p{
         color:var(--secondary);
     }
     

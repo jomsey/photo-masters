@@ -8,9 +8,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function NavBar() {
   const [navOpen,setNavOpen] = React.useState(false)
- const handleNavOpen=()=>{
-        navOpen?setNavOpen(false):setNavOpen(true);
-}
+  const handleNavOpen=()=>navOpen?setNavOpen(false):setNavOpen(true);
+  const handleLinkClick = ()=>navOpen && setNavOpen(false);
 
   return (
     <nav>
@@ -23,12 +22,13 @@ export default function NavBar() {
                     <li><Link href="/showcase">Showcase</Link></li>
                     <li><Link href="#contact">Contact</Link></li>
                     {/* <li><Link href="/blog">Blog</Link></li> */}
+              
                 </ul>
             </div>
             
          <div className={styles.navContact}>
             <ul>
-                <li><button type="button">Call Us <FontAwesomeIcon icon={faPhoneAlt} shake /></button></li>
+                <li><a href="tel:+254114411886"><button type="button">Call Us <FontAwesomeIcon icon={faPhoneAlt} shake /></button></a></li>
 
             </ul>
          </div>
@@ -39,12 +39,12 @@ export default function NavBar() {
                    </div>
         </div>
         <div className={`${styles.offCanvas} ${navOpen && styles.offCanvasOpen}`}>
-                    <Link href="/">Home</Link>
-                    <Link href="/about">About</Link>
-                    <Link href="/showcase">Showcase</Link>
-                    <Link href="#contact">Contact</Link>                   
+                   
+                    <Link href="/" onClick ={handleLinkClick}>Home</Link>
+                    <Link href="/about" onClick ={handleLinkClick}>About</Link>
+                    <Link href="/showcase" onClick ={handleLinkClick}>Showcase</Link>
+                    <Link href="#contact" onClick ={handleLinkClick}>Contact</Link>                   
         </div>
-        
     </nav>
   )
 } 
