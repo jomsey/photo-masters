@@ -1,16 +1,14 @@
 import Image from "next/image";
 import styles from "./page.module.css"
 import images from "@/lib/gallery-images";
-import Video from "@/components/player/player";
 import Reviews from "@/components/reviews/reviews";
 import Service from '../components/service/service';
 import Gallery from './../components/gallery/gallery';
 import Member from './../components/team-member/member';
 import BookingButton from "@/components/bookingButton/button";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faBookAtlas, faFilm, faPhotoFilm, faPlane, faPlaneUp,faRing} from "@fortawesome/free-solid-svg-icons";
-import SeeGalleryButton from "@/components/seeGalleryButton/button";
 import ReadMoreButton from './../components/readMoreBtn/button';
+import SeeGalleryButton from "@/components/seeGalleryButton/button";
+import { faBookAtlas, faFilm, faPhotoFilm, faPlaneUp,faRing} from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -19,7 +17,7 @@ export default function Home() {
         
              <div className={styles.heroText}>
                   <h1>Your<br/><span>Photography</span><br/>Masters</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure est perferendis asperiores in accusantium voluptas qui sint nemo nostrum eos.</p>
+                  <p>Your memories are invaluable, and we are honored to be entrusted with capturing them.We believe in the magic of candid moments, genuine smiles, and natural beauty.</p>
             </div>
             <div className={styles.landingButtons}>
               <BookingButton/>
@@ -32,8 +30,10 @@ export default function Home() {
           <div>
                <span className="title-support">Your number one option</span>
                <h2>We Paint Your Memories</h2>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse corrupti magni delectus inventore pariatur officia ex quasi, necessitatibus tempora quia nesciunt numquam suscipit quo nihil dolores architecto voluptates ipsam animi doloremque repellat rerum asperiores. Quo praesentium consectetur consequuntur officia unde?</p>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quaerat commodi distinctio quibusdam hic ut omnis, quas adipisci fugit quisquam eos quasi ullam explicabo facere pariatur vel quod nihil voluptatibus?</p>
+               <p>Welcome to our photography world, where we take the brush of creativity and paint your memories onto the canvas of eternity.Our mission is to transform your treasured moments into timeless works of art. With every click of the shutter, we capture not just images but emotions, stories, and the essence of your unique experiences.</p>
+               <p>We offer a personalized photography experience tailored to your specific needs. Whether it's a wedding, a family reunion, or a special event, we collaborate closely with you to understand your vision. Our goal is to create a visual narrative that reflects your style, personality, and the true essence of the moment.
+
+</p>
           </div>
 
           <div>
