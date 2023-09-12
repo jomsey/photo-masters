@@ -51,17 +51,17 @@ export default function Home() {
       <section className={styles.services}>
           <span className="title-support">Our Tool Box</span>
           <h2>Services  We Offer</h2>
-          <p> we offer a wide range of photography services tailored to meet your unique needs and capture your most precious moments. Our team of skilled photographers is committed to delivering exceptional results that you'll treasure for a lifetime. Explore our services below</p>
+          <p> We offer a wide range of photography services tailored to meet your unique needs and capture your most precious moments. Our team of skilled photographers is committed to delivering exceptional results that you'll treasure for a lifetime. Explore our services below</p>
         <div className={styles.servicesContainer}>
               <Service
-                  name="Photos & Videos Editing" 
+                  name="Photo Editing and Retouching" 
                   icon={faPhotoFilm}
-                  description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero exercitationem adipisci corrupti sed, optio possimus."
+                  description="Enhance the beauty of your photos with our professional photo editing and retouching services. We ensure that every image meets the highest standards of quality and aesthetic."
               />
                   
               <Service
                 name="Events Photography"
-                description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero exercitationem adipisci corrupti sed, optio possimus."
+                description="Whether it's a birthday celebration, anniversary, or corporate event, our event photography services ensure that every moment and detail is captured in style."
               />
 
               <Service
@@ -84,7 +84,7 @@ export default function Home() {
               <Service
                 name="Wedding Photography"
                 icon={faRing}
-                description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero exercitationem adipisci corrupti sed, optio possimus."
+                description="Your special day deserves to be beautifully documented. We specialize in capturing the love, joy, and emotions of weddings, creating timeless memories for you and your loved ones."
 
               />
         </div>
