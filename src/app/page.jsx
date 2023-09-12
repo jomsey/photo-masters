@@ -51,8 +51,7 @@ export default function Home() {
       <section className={styles.services}>
           <span className="title-support">Our Tool Box</span>
           <h2>Services  We Offer</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque numquam totam rem. Iste repellendus praesentium dolores alias! Tempora quasi eius nihil at voluptatum. Aut, officia asperiores! Animi ipsam omnis natus?s</p>
-
+          <p> we offer a wide range of photography services tailored to meet your unique needs and capture your most precious moments. Our team of skilled photographers is committed to delivering exceptional results that you'll treasure for a lifetime. Explore our services below</p>
         <div className={styles.servicesContainer}>
               <Service
                   name="Photos & Videos Editing" 
