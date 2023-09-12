@@ -8,7 +8,7 @@ import Member from './../components/team-member/member';
 import BookingButton from "@/components/bookingButton/button";
 import ReadMoreButton from './../components/readMoreBtn/button';
 import SeeGalleryButton from "@/components/seeGalleryButton/button";
-import { faBookAtlas, faFilm, faPhotoFilm, faPlaneUp,faRing} from "@fortawesome/free-solid-svg-icons";
+import { faBookAtlas, faCakeCandles, faFilm, faPeopleGroup, faPhotoFilm, faPlaneUp,faRing, faTree, faTreeCity} from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -60,25 +60,26 @@ export default function Home() {
               />
                   
               <Service
+              icon={faCakeCandles}
                 name="Events Photography"
                 description="Whether it's a birthday celebration, anniversary, or corporate event, our event photography services ensure that every moment and detail is captured in style."
               />
 
               <Service
-                  name ="Video Shooting & Filming"
-                  icon={faFilm}
-                  description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero exercitationem adipisci corrupti sed, optio possimus."
+                  name ="Nature and Landscape Photography"
+                  icon={faTree}
+                  description="Discover the beauty of the natural world through our lens. Our nature and landscape photography showcases the awe-inspiring scenery of various destinations"
               />
               <Service
-                 name="Branding"
+                 name="Portrait Sessions"
                  icon={faBookAtlas}
-                 description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero exercitationem adipisci corrupti sed, optio possimus."
+                 description="Our portrait sessions are a platform for self-expression and creativity. Whether it's an individual portrait, couple's session, or a personal branding shoot, we bring out your unique personality"
 
               />
               <Service
-                name="Drone Videography"
-                icon={faPlaneUp}
-                description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero exercitationem adipisci corrupti sed, optio possimus."
+                name="Family Portraits"
+                icon={faPeopleGroup}
+                description="Preserve your family's bond with stunning family portrait sessions. From candid moments to formal group shots, we capture the essence of your family's unique connection"
 
               />
               <Service

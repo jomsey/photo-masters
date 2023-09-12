@@ -49,8 +49,7 @@ export default function Contact(){
         <section className={"contact "+ styles.contactContainer} id="contact">
             <div className={styles.first}>
                 <h2>Contact Us</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates eius iure eaque facilis dolores impedit quod sed quidem, ut nobis.
-                </p>
+                <p>We understand that every photography project is unique. Contact us to discuss customized packages tailored to your specific requirements.</p>
                 <form onSubmit={handleFormSubmit} method="post" noValidate>
                     <div className={styles.inputGroup}>
                         <label htmlFor="name">Name</label>
