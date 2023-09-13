@@ -72,7 +72,7 @@ export default function Home() {
               />
               <Service
                  name="Portrait Sessions"
-                 icon={faBookAtlas}
+            
                  description="Our portrait sessions are a platform for self-expression and creativity. Whether it's an individual portrait, couple's session, or a personal branding shoot, we bring out your unique personality"
 
               />
@@ -95,11 +95,10 @@ export default function Home() {
       <section className={styles.butter}>
               <div className={styles.col1}>
                   <span className="title-support">Our Story</span>
-                  <h2>Lorem, ipsum dolor sit amet consectetur adipisicing.</h2>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea eius, dicta facilis dolor voluptatem dolorum molestias, sint nemo sed vel cumque! Dolorum, eius? Nemo blanditiis reprehenderit excepturi, sit laudantium ad!</p>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea eius, dicta facilis dolor voluptatem dolorum molestias, sint nemo sed vel cumque! Dolorum, eius? Nemo blanditiis reprehenderit excepturi, sit laudantium ad!</p>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea eius, dicta facilis dolor voluptatem dolorum molestias, sint nemo sed vel cumque! Dolorum, eius? Nemo blanditiis reprehenderit excepturi, sit laudantium ad!</p>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea eius, dicta facilis dolor voluptatem dolorum molestias, sint nemo sed vel cumque! Dolorum, eius? Nemo blanditiis reprehenderit excepturi, sit laudantium ad!</p>
+                  <h2>Capturing moments since...</h2>
+                  <p>"Our Story" is a tale of passion, creativity, and a relentless pursuit of capturing the beauty of life through the lens. It all began with a shared love for photography among our founders, who believed in the power of a single photograph to convey emotions, stories, and memories that words often fall short of. Fuelled by this belief, we embarked on a journey to turn moments into masterpieces, and "We Paint Your Memories" was born</p>
+                  <p>Over the years, our journey has been a canvas painted with the colors of diverse experiences. We've had the privilege of witnessing countless weddings, family reunions, travel adventures, and special events, each with its own unique story waiting to be told. Our dedication to understanding the essence of every moment and capturing it with an artist's eye has earned us the trust of our clients, who have become a part of our extended photography family.</p>
+                  <p>As our story unfolded, so did our commitment to continuous improvement and creativity. We've embraced the evolution of photography, mastering new techniques, and staying at the forefront of technology to ensure that each click is a step closer to perfection. Our team's collective passion and drive to excel have been the driving force behind our growth and success.</p>
                   <ReadMoreButton/>
               </div>
 
@@ -123,9 +122,9 @@ export default function Home() {
             <div className={styles.col2}>
             <span className="title-support">We Are Motivated</span>
                 <h2>Our Vision</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea eius, dicta facilis dolor voluptatem dolorum molestias, sint nemo sed vel cumque! Dolorum, eius? Nemo blanditiis reprehenderit excepturi, sit laudantium ad!</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea eius, dicta facilis dolor voluptatem dolorum molestias, sint nemo sed vel cumque! Dolorum, eius? Nemo blanditiis reprehenderit excepturi, sit laudantium ad!</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea eius, dicta facilis dolor voluptatem dolorum molestias, sint nemo sed vel cumque! Dolorum, eius? Nemo blanditiis reprehenderit excepturi, sit laudantium ad!</p>
+                <p>Our vision is deeply rooted in the idea that photography should tell a story. Whether it's the laughter shared between loved ones, the sparkle in your eyes on your special day, or the breathtaking landscapes we encounter, we aim to encapsulate the soul of these moments in every photograph. We envision our work becoming a source of inspiration, evoking emotions, and stirring memories for generations to come.</p>
+                <p>We want to redefine the way you experience photography. We believe that a photograph is not just an image; it's a gateway to the past, a reflection of emotion, and a portal to relive your most cherished moments. Our vision is to capture the essence of life's beauty, one frame at a time, and to create a visual legacy that transcends time and resonates with the heart.</p>
+                <p>our vision extends beyond the ordinary. We aspire to be more than just photographers; we aspire to be storytellers, artists, and memory-makers. We envision a world where every click of our camera paints your memories in the most vibrant and authentic way possible. Join us in realizing this vision as we embark on a creative journey to capture the beauty and emotion of your life's most precious moments.</p>
             </div>
       </section>
   
@@ -135,17 +134,14 @@ export default function Home() {
           <span className="title-support">Good People</span>
 
           <h2>Meet Our Team</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque numquam totam rem. Iste repellendus praesentium dolores alias! Tempora quasi eius nihil at voluptatum. Aut, officia asperiores! Animi ipsam omnis natus?s</p>
+          <p>Meet the artists who will be capturing your moments of love, joy, and celebration. Our team is a blend of seasoned professionals with years of experience and fresh talents brimming with creativity. We understand that every event is unique, and our diverse skills and personalities allow us to adapt and deliver photography that reflects your individuality.</p>
          
           <div className={styles.teamMembersContainer}> 
                 <Member name="Neckyon"/>
                 <Member name="Sam Doe" task="Drone Pilot"/>
                 <Member name="Jane Doe"/>
                 <Member name="Anne Doe"  task="Graphic Designer"/>
-                <Member name="Bill Doe"/>
-                <Member name="Sam Doe"/>
-                <Member name="Jane Doe"/>
-                <Member name="Anne Doe"/>
+            
           </div>
           
       </section>

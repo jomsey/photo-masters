@@ -14,7 +14,7 @@ export default function Reviews(props) {
           <div className={styles.first}>
               <span className="title-support">Testimonials</span>
               <h2>Our Customers' Feedback</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam quidem perferendis cupiditate officiis consequatur numquam fuga nobis cum error ea.</p>
+              <p> We are proud to share the heartfelt feedback we've received from our valued customers, as it speaks to the quality, dedication, and passion that define our photography services. Their words of praise and gratitude inspire us to continue painting memories that truly resonate with the heart. We invite you to explore these testimonials to gain insight into the unforgettable experiences we create for our clients.</p>
           </div>
 
           <div className={styles.display}>
