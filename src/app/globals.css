@@ -51,7 +51,7 @@ li {
 
 h2 {
     font-size: 24px;
-    color: rgb(37, 37, 37);
+    color: var(--secondary);
     font-family: PlayfairDisplay;
 }
 
@@ -110,12 +110,13 @@ button {
 .splide__track {
     width: 400px !important;
 }
- .splide__arrows{
-        display: none !important;
-    }
+
+.splide__arrows {
+    display: none !important;
+}
+
 @media screen and (max-width:428px) {
     p {
         font-size: 12px;
     }
-   
 }
