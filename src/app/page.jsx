@@ -39,8 +39,8 @@ export default function Home() {
           <div>
               <Image 
                     src="/images/b2x.jpg"
-                    width="400"
-                    height="300"
+                    width="1800"
+                    height="1200"
                     loading="lazy"
                     alt="camera man"
               />
@@ -105,8 +105,8 @@ export default function Home() {
               <div className={styles.col2}>
                    <Image 
                         src="/images/b25.jpg"
-                        width="500"
-                        height="500"
+                        width="1500"
+                        height="1800"
                         loading="lazy"
                         alt="seated holding a tablet"/>
               </div>
@@ -116,7 +116,12 @@ export default function Home() {
 
       <section className={styles.vision}>
             <div className={styles.col1}>
-                <Image width="400" height="400" src="/images/b8.png" loading="lazy"/>
+                <Image 
+                    width="434"
+                    height="575" 
+                    src="/images/b8.png" 
+                    loading="lazy" 
+                    alt="camera"/>
             </div>
 
             <div className={styles.col2}>

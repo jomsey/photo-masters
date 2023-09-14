@@ -28,7 +28,7 @@ export default function Reviews(props) {
                       <p><FontAwesomeIcon icon={faQuoteLeft} beatFade/> <br/>
                        {r.review}
                        </p>
-                      <span>{r.name}</span>
+                      <span className={styles.name}>{r.name}</span>
                     </div>
                   </SplideSlide>
                ))

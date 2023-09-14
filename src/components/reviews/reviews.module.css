@@ -5,7 +5,10 @@
     margin-bottom: 64px;
     overflow: hidden;
 }
-
+.name{
+    font-size: small;
+    margin-bottom: 12px;
+}
 .reviews::after {
     content: "";
     position: absolute;
@@ -15,6 +18,7 @@
     height: 100%;
     backdrop-filter: blur(10px);
     z-index: -1;
+    
 }
 
 .reviews * {
@@ -101,7 +105,9 @@
     
 
     }
-    
+    .name{
+        color: var(--primary);
+    }
     .display {
         height: 100%;
         width: 100%;

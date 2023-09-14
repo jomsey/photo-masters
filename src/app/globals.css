@@ -84,7 +84,7 @@ button {
 
 .loading {
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.807);
+    background-color: #000000ce;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,7 +114,12 @@ button {
 .splide__arrows {
     display: none !important;
 }
-
+button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
 @media screen and (max-width:428px) {
     p {
         font-size: 12px;

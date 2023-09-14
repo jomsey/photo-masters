@@ -46,8 +46,6 @@
     background-image: -moz-linear-gradient()(to right, rgb(25, 24, 24), transparent);
     background-image: -o-linear-gradient()(to right, rgb(25, 24, 24), transparent);
     background-image: -webkit-linear-gradient()(to right, rgb(25, 24, 24), transparent);
-
-
 }
 
 .heroText {
@@ -112,7 +110,7 @@
     width: 500px;
 }
 
-.preamble img{
+.preamble img {
     object-fit: cover;
     -o-object-fit: cover;
 }
@@ -157,6 +155,10 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     position: relative;
     margin-bottom: 64px;
+    padding: 32px 0;
+    border-radius: 16px;
+    background-color: #ebe9e961;
+
 }
 
 .teamMembers {
@@ -175,7 +177,7 @@
 .teamMembersContainer::after {
     content: "";
     width: 100%;
-    background-color: rgb(244, 244, 244);
+    background-color: #f4f4f4;
     height: 90%;
     position: absolute;
     z-index: -2;
@@ -227,7 +229,7 @@
     width: 40%;
     position: relative;
     bottom: -40px;
- z-index: 10;
+    z-index: 10;
 }
 
 .vision .col2 {
@@ -251,14 +253,15 @@
     z-index: -3;
     border-radius: 10px;
 }
-.butter{
+
+.butter {
     z-index: 1;
 }
+
 .butter .col2 {
     position: relative;
     width: 50%;
     filter: grayscale();
-
 }
 
 .butter .col1 {
@@ -276,7 +279,7 @@
 .butter button {
     cursor: pointer;
     border: 2px solid var(--primary);
-    color: var(--primary);
+    color: var(--secondary);
     background-color: #fff !important;
     padding: 10px 0;
     width: 300px;
@@ -287,7 +290,8 @@
     align-items: center;
     justify-content: center;
 }
-.butter button::after{
+
+.butter button::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -298,116 +302,100 @@
     z-index: -1;
 }
 
-
 @media screen and (max-width:428px) {
     .landing {
         max-height: unset;
         flex-direction: column;
         justify-content: center;
         background-position: center;
-        height:70vh;
-
+        height: 50vh !important;
     }
-    
     .landing .video {
         display: none;
     }
-    
     .landing h1,
     .landing h1 span {
         font-size: 2.7rem;
     }
+    .landingButtons {
+        bottom: 32px !important;
+
+    }
+    .landingButtons button {
     
-    .heroText{
+        padding: 8px 24px !important;
+    }
+    .heroText {
         width: 80%;
         margin: auto;
     }
-   
-    
     .heroText p {
         width: 100%;
     }
-    
     .preamble {
         padding: 0;
         flex-direction: column;
-
     }
     .preamble div:first-child {
         width: 80%;
         padding: 48px 0;
     }
-    
     .preamble div:nth-child(2) {
         height: 300px;
         width: 100%;
     }
-    
     .preamble p {
         margin-top: 24px;
     }
-    
     .preamble * {
         z-index: 2;
     }
-    
     .preamble::after {
         width: 20px;
     }
-
     .services {
         width: 80%;
         margin: 64px auto;
     }
-    
     .services h2,
     .teamMembers h2 {
         text-align: center;
         margin-bottom: 36px;
     }
-
-    
     .servicesContainer,
     .teamMembersContainer {
         display: grid;
         grid-template-columns: 1fr;
         gap: 24px;
     }
-    
     .teamMembersContainer {
         grid-template-columns: 1fr 1fr;
         position: relative;
+        margin: auto;
         margin-bottom: 64px;
         height: 100%;
-        padding: 0 10%;
         gap: 24px;
+        width: 80%;
     }
-    
     .teamMembers {
         width: 100%;
         margin: auto;
     }
-    
-   
     .services>p {
         width: 100%;
     }
-
     .teamMembersContainer::after {
         height: 100%;
         bottom: unset;
-        padding: 24px; 
+        padding: 24px;
     }
-    
     .services>span,
     .teamMembers>span {
         text-align: center;
     }
-    
     .landingButtons {
         bottom: 100px;
     }
-    
     .vision,
     .butter {
         width: 100%;
@@ -415,22 +403,21 @@
         align-items: center;
         flex-direction: column;
     }
-    
-    .vision .col1,.vision .col2 , .butter .col1{
+    .vision .col1,
+    .vision .col2,
+    .butter .col1 {
         width: 80%;
         margin: auto;
     }
-    
     .vision .col1::after {
         width: 100%;
         height: 80%;
         bottom: 36px;
         top: unset;
-        left:0;
+        left: 0;
         z-index: -80;
-
     }
-    .vision{
+    .vision {
         flex-direction: column-reverse;
         margin-top: 64px;
     }
@@ -438,16 +425,13 @@
         position: relative;
         width: 100%;
     }
-     .teamMembers>p{
+    .teamMembers>p {
         width: 80%;
         margin: auto;
         margin-bottom: 64px;
-     }
-
-     .butter button {
+    }
+    .butter button {
         width: 100%;
         margin-bottom: 36px;
-        
     }
-     
 }

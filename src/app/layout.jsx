@@ -9,7 +9,7 @@ import Contact from '@/components/contact/contact';
 export const metadata = {
     title: 'Jose Demo',
     description: 'Site description will appear here -- Coming soon  [Developed by Muwanguzi Joseph] ',
-    colorTheme:"#100FOF"
+    themeColor:"#100F0F"
 }
 
 config.autoAddCss = false

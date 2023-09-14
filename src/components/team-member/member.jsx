@@ -13,7 +13,7 @@ export default function Member({name,task}) {
         alt="profile pic"/>
     </span>
     <h3>{name}</h3>
-    <small>{task || "Photographer"}</small>
+    {/* <small>{task || "Photographer"}</small> */}
 </div>
   )
 }
