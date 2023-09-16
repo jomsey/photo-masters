@@ -308,7 +308,6 @@
         justify-content: center;
         background-position: center;
         height: 50vh !important;
-        min-height: 500px;
     }
     .landing .video {
         display: none;

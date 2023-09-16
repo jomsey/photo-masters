@@ -12,12 +12,12 @@ export default function  Quetion({question,answer}){
         <div className={styles.questionContainer}>
             <div className={styles.top} onClick={()=>answerVisible?setAnswerVisible(false):setAnswerVisible(true)}> 
                 <FontAwesomeIcon icon={answerVisible?faMinus:faPlus}/>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, incidunt explicabo ?</h3>
+                <h3>{question}</h3>
            </div>
             {
                 answerVisible &&
                 <div className={styles.answerContainer}>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur neque fuga, quibusdam, earum beatae cupiditate animi cumque magni blanditiis fugiat amet consequuntur quidem, ex illum nihil nobis impedit fugit delectus harum similique obcaecati. Non, eligendi!</p>
+                    <p>{answer}</p>
                </div>
             }
         </div>
