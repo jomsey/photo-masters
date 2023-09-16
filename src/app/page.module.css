@@ -3,8 +3,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url(/images/b2x.jpg);
-    background-position: top;
+    background-image: url(/images/b3.jpg);
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
@@ -309,6 +308,7 @@
         justify-content: center;
         background-position: center;
         height: 50vh !important;
+        min-height: unset;
     }
     .landing .video {
         display: none;
