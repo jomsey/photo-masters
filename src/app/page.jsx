@@ -2,13 +2,14 @@ import Image from "next/image";
 import styles from "./page.module.css"
 import images from "@/lib/gallery-images";
 import Reviews from "@/components/reviews/reviews";
-import Service from '../components/service/service';
-import Gallery from './../components/gallery/gallery';
-import Member from './../components/team-member/member';
+import Service from '@/components/service/service';
+import Gallery from '@/components/gallery/gallery';
+import AskedQuestions from "@/components/faq/faq"
+import Member from '@/components/team-member/member';
 import BookingButton from "@/components/bookingButton/button";
-import ReadMoreButton from './../components/readMoreBtn/button';
+import ReadMoreButton from '@/components/readMoreBtn/button';
 import SeeGalleryButton from "@/components/seeGalleryButton/button";
-import { faBookAtlas, faCakeCandles, faFilm, faPeopleGroup, faPhotoFilm, faPlaneUp,faRing, faTree, faTreeCity} from "@fortawesome/free-solid-svg-icons";
+import {faCakeCandles, faPhotoFilm,faRing, faTree,faPeopleGroup} from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -150,8 +151,9 @@ export default function Home() {
           </div>
           
       </section>
-        <Gallery images={images}/>
-
+      
+      <AskedQuestions/>
+      <Gallery images={images}/>
     </>
   )
 }

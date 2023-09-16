@@ -9,7 +9,7 @@ export default function NavBar() {
   return (
     <nav>
         <div className={styles.navContainer}>
-            <Link href="\"> <div className={styles.logo} ><img src="/next.svg" alt="" /></div></Link>
+            <Link href="\"> <div className={styles.logo} ><img src="/images/logo.png" alt="" /></div></Link>
             <div className={styles.navLinks}>
                 <ul>
                     <li><Link href="/">Home</Link></li>
