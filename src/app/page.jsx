@@ -39,7 +39,7 @@ export default function Home() {
 
           <div>
               <Image 
-                    src="/images/b2x.jpg"
+                    src="/images/b31.jpg"
                     width="1800"
                     height="1200"
                     loading="lazy"
@@ -99,13 +99,13 @@ export default function Home() {
                   <h2>Capturing moments since...</h2>
                   <p>"Our Story" is a tale of passion, creativity, and a relentless pursuit of capturing the beauty of life through the lens. It all began with a shared love for photography among our founders, who believed in the power of a single photograph to convey emotions, stories, and memories that words often fall short of. Fuelled by this belief, we embarked on a journey to turn moments into masterpieces, and "We Paint Your Memories" was born</p>
                   <p>Over the years, our journey has been a canvas painted with the colors of diverse experiences. We've had the privilege of witnessing countless weddings, family reunions, travel adventures, and special events, each with its own unique story waiting to be told. Our dedication to understanding the essence of every moment and capturing it with an artist's eye has earned us the trust of our clients, who have become a part of our extended photography family.</p>
-                  <p>As our story unfolded, so did our commitment to continuous improvement and creativity. We've embraced the evolution of photography, mastering new techniques, and staying at the forefront of technology to ensure that each click is a step closer to perfection. Our team's collective passion and drive to excel have been the driving force behind our growth and success.</p>
+                  {/* <p>As our story unfolded, so did our commitment to continuous improvement and creativity. We've embraced the evolution of photography, mastering new techniques, and staying at the forefront of technology to ensure that each click is a step closer to perfection. Our team's collective passion and drive to excel have been the driving force behind our growth and success.</p> */}
                   <ReadMoreButton/>
               </div>
 
               <div className={styles.col2}>
                    <Image 
-                        src="/images/b25.jpg"
+                        src="/images/b32.jpg"
                         width="1500"
                         height="1800"
                         loading="lazy"
@@ -130,9 +130,9 @@ export default function Home() {
                 <h2>Our Vision</h2>
                 <p>Our vision is deeply rooted in the idea that photography should tell a story. Whether it's the laughter shared between loved ones, the sparkle in your eyes on your special day, or the breathtaking landscapes we encounter, we aim to encapsulate the soul of these moments in every photograph. We envision our work becoming a source of inspiration, evoking emotions, and stirring memories for generations to come.</p>
                 <p>We want to redefine the way you experience photography. We believe that a photograph is not just an image; it's a gateway to the past, a reflection of emotion, and a portal to relive your most cherished moments. Our vision is to capture the essence of life's beauty, one frame at a time, and to create a visual legacy that transcends time and resonates with the heart.</p>
-                <p>our vision extends beyond the ordinary. We aspire to be more than just photographers; we aspire to be storytellers, artists, and memory-makers. We envision a world where every click of our camera paints your memories in the most vibrant and authentic way possible. Join us in realizing this vision as we embark on a creative journey to capture the beauty and emotion of your life's most precious moments.</p>
+                {/* <p>Our vision extends beyond the ordinary. We aspire to be more than just photographers; we aspire to be storytellers, artists, and memory-makers. We envision a world where every click of our camera paints your memories in the most vibrant and authentic way possible. Join us in realizing this vision as we embark on a creative journey to capture the beauty and emotion of your life's most precious moments.</p> */}
             </div>
-      </section>
+      </section> 
   
       <Reviews/>
 
@@ -143,11 +143,10 @@ export default function Home() {
           <p>Meet the artists who will be capturing your moments of love, joy, and celebration. Our team is a blend of seasoned professionals with years of experience and fresh talents brimming with creativity. We understand that every event is unique, and our diverse skills and personalities allow us to adapt and deliver photography that reflects your individuality.</p>
          
           <div className={styles.teamMembersContainer}> 
-                <Member name="Neckyon"/>
+                <Member name="Andy"/>
                 <Member name="Sam Doe" task="Drone Pilot"/>
                 <Member name="Jane Doe"/>
                 <Member name="Anne Doe"  task="Graphic Designer"/>
-            
           </div>
           
       </section>

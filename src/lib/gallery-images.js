@@ -1,8 +1,8 @@
 const images = [{
-        largeURL: '/images/b17.jpg',
-        thumbnailURL: '/images/b17.jpg',
-        width: 675,
-        height: 1000,
+        largeURL: '/images/b33.jpg',
+        thumbnailURL: '/images/b33.jpg',
+        width: 736,
+        height: 850,
     },
     {
         largeURL: '/images/b2.jpg',
@@ -17,14 +17,14 @@ const images = [{
         height: 2500,
     },
     {
-        largeURL: '/images/b4.jpg',
-        thumbnailURL: '/images/b4.jpg',
+        largeURL: '/images/b30.jpg',
+        thumbnailURL: '/images/b30.jpg',
         width: 1875,
         height: 2500,
     },
     {
-        largeURL: '/images/b18.jpg',
-        thumbnailURL: '/images/b18.jpg',
+        largeURL: '/images/b10.jpg',
+        thumbnailURL: '/images/b10.jpg',
         width: 1875,
         height: 2500,
     },

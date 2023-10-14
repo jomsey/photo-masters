@@ -17,7 +17,7 @@ export default function Showcase() {
        <section className={styles.dp1} >
            <div className={styles.row1}>
               <div>
-                    <Image width="400" height="400" src="/images/b27.jpg"/> 
+                    <Image width="400" height="400" src="/images/p3.jpg"/> 
                 </div>
 
                 <div className={`${styles.center}`}>
@@ -28,7 +28,7 @@ export default function Showcase() {
                 </div>
            </div>
 
-           <div className={`${styles.row2} ${styles.center}`}>
+           {/* <div className={`${styles.row2} ${styles.center}`}>
                 <div>
                     <Image width="400" height="400" src="/images/b20.jpg"/> 
                       <span>Lorem ipsum dolor sit amet.</span>
@@ -43,7 +43,7 @@ export default function Showcase() {
                       <Image width="400" height="400" src="/images/b29.jpg"/> 
                       <span>Lorem ipsum dolor sit amet.</span>
                 </div>
-           </div>
+           </div> */}
 
        </section>
 
@@ -61,7 +61,7 @@ export default function Showcase() {
                 </div>
            </div>
 
-           <div className={`${styles.row2} ${styles.center}`}>
+           {/* <div className={`${styles.row2} ${styles.center}`}>
                 <div>
                     <Image width="400" height="400" src="/images/b28.jpg"/> 
                       <span>Lorem ipsum dolor sit amet.</span>
@@ -76,7 +76,7 @@ export default function Showcase() {
                       <Image width="400" height="400" src="/images/b18.jpg"/> 
                       <span>Lorem ipsum dolor sit amet.</span>
                 </div>
-           </div>
+           </div> */}
        </section>
        <Gallery/>
     </main>

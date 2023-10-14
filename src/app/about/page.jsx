@@ -17,7 +17,7 @@ export default function AboutUs() {
          <section className={styles.oreo}>
            <div className={styles.col1}>
                 <Image width="400" height="400" src="/images/b16.jpg"/>
-                <Image width="400" height="400" src="/images/b19.jpg"/> 
+                <Image width="400" height="400" src="/images/b35.jpg"/> 
            </div>
 
            <div className={styles.col2}>
@@ -37,7 +37,7 @@ export default function AboutUs() {
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet provident, ipsum necessitatibus, repellendus in impedit aliquam vitae dignissimos libero excepturi dicta quam quos magnam assumenda quaerat totam consequuntur nisi tempora.</p>
             </div>
             <div>
-            <Image width="400" height="400" src="/images/b23.jpg"/>
+            <Image width="400" height="400" src="/images/b5.jpg"/>
             </div>
         </section>
 
